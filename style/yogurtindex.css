@@ -1,0 +1,459 @@
+
+
+
+#sec1{width: 100%; height:865px;
+    transform: translateY(90px);
+       position: relative;}
+
+#sec1box{width: 100%; height: calc(100% - 78px) ; 
+        position: relative; 
+        overflow: hidden;}
+
+.sec1back{width: 1920px; height: 100%;}
+
+
+.scriptbox{width: 300%; height: 100%;  
+                display: flex;
+                transition: .5s;}
+.script{width: 33.3333%; height: 100%;}
+.script img{width: 100%; height: 100%; display: block; 
+                filter: blur(5px);
+                transition: .5s;}
+.sec1text{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                   width: 350px; height: 350px;        
+                   border-radius: 50%;        
+                   background:  rgb(0, 39, 122, 80%);                                   
+                   text-align: center; text-transform: uppercase;
+                   transition: .5s; }
+.sec1text h1{font-family: 'HancomMalangMalang-Regular'; font-size: 2rem;
+            font-weight: 700;
+            color: rgb(255, 255, 255,90%);
+            transform: translateY(30px);}
+.sec1text hr{ width: 300px; height: 3px;
+             border: none; border-radius: 20px;
+             transform: translate(25px, 40px);
+                background: rgb(255, 255, 255, 90%);}
+.sec1text h2{ font-family: 'kdg_Medium'; font-size: 3.5rem;
+                font-weight: bold;
+                color: rgb(255, 215, 55, 90%);
+            transform: translateY(55px);}
+.scriptbutton{ position: absolute; top: 50%; transform: translateY(-50%);
+        font-size: 3rem; font-weight: 900; color: white; 
+        border: none; background: #004fffb3;
+        border-radius: 5px; opacity: 0.7; transition: 0.3s;
+        cursor: pointer;
+    }
+.scriptleft{left: 10px;}
+.scriptright{right: 10px;}
+
+.page { position: absolute;
+        bottom: 30px; left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 99;
+    }
+    
+    .circle {
+        width: 50px; height: 7px;
+        background: #fff;
+        margin: 0 3px; opacity: 0.5;
+        transition: 0.3s; cursor: pointer;
+        border-radius: 5px;
+    }
+    .circle:first-child {
+        opacity: 1;  width:60px; background: #004fffb3;
+    }
+
+
+
+#sec1box .sec1hide{width: 100%; height: 250px;
+                    background: rgb(0, 0, 0, 30%);
+                    position: absolute; bottom: -100%; left: 0;
+                    font-family: 'Pretendard-Regular';
+                    padding: 20px 50px;
+                    transition: .5s;}
+.sec1hide a{color: white;}
+.sec1hide h1{font-size: 3rem; margin-bottom: 10px;}
+.sec1hide h2{font-size: 1.5rem; margin-bottom: 10px;}
+.sec1hide p{font-size: 1.1rem; font-weight: lighter;
+                line-height: 1.5rem;
+            margin-top: 10px;}
+.sec1hide hr{border: none; background: rgb(255, 255, 255, 50%);
+            height: 2px;}
+
+
+
+
+
+@media screen and (max-width:770px) {
+        #sec1box .sec1hide{padding: 20px 30px;}
+        
+}
+
+
+
+
+
+
+
+#sec2{width: 100%; max-width: 1200px; margin: auto; 
+        height: 155vh; transform: translateY(90px);
+        margin-bottom: 50px;
+      }
+#sec2top{width: 100%; height: 60%; position: relative; }
+
+#sec2top .sec2text{ width: 100%; height: 15%; transform: translateY(50px);
+                    text-align: center;}
+.sec2text h2{font-family: 'Pretendard-ExtraBold'; font-size: 2.5rem;
+                color: rgb(0, 79, 255, 50%);
+                margin: 5px 0;}
+.sec2text h3{ font-family: 'Pretendard-Regular'; font-size: 1.3rem;
+                color: rgb(0, 79, 255, 50%);
+                margin: 5px 0;}
+.sec2text h1{font-family: 'Pretendard-ExtraBold'; font-size: 2.5rem;
+                color: rgb(0, 79, 255, 90%);
+                margin: 5px 0;}
+
+
+
+.sec2gall{width: 100%; height: 85%;
+                  position: relative; transform: translateY(100px);}
+.gallinbutton{width: 65%; height: 5%;
+                margin: auto;               
+                display: flex;
+                justify-content: space-between;}
+.gallinbutton button{width: 15%; height: 30px;
+                    border: none ; border-radius: 30px;
+                    background:rgb(0, 79, 255, 50%);
+                    font-size: .9rem;  font-family: 'ONE-Mobile-Title';
+                    font-weight: 500; color: white;
+                    transition: .5s;
+                        cursor: pointer;}
+                
+
+.gallinbutton button:hover{background:rgb(255, 133, 133, 70%);}
+
+
+.gallinlist{width: 70%; height: 65%; margin: auto;
+               overflow: hidden;
+                position: relative;}
+.galllist{width: 200%; height: 100%;
+        display: flex;
+        transition: .5s;}
+.slide{width: calc(100% / 6); height: 100%;
+        padding: 30px;}
+.slide img{width: 100%; display: block;
+                transition: .5s; }
+.slide h2{color: rgb(0, 79, 255, 80%);
+        font-size: 1.8rem;  font-family: 'Pretendard-ExtraBold';
+        text-align: center; line-height: 1.8rem;
+        margin-top: 40px;
+        transition: .5s;}
+.slide h3{color: rgb(0, 79, 255, 80%);
+        font-size: 1rem;  font-family: 'Pretendard-ExtraBold';
+        text-align: center; line-height: 1rem;
+        transition: .5s;}
+.slide p{color: #333333;
+        font-size: 1rem; font-family: 'Pretendard-Regular';
+        text-align: center; line-height: 1.5rem;
+        margin-top: 20px;
+        transition: .5s;}
+.gallback{position: absolute; z-index: -1;
+        width: 33.3333%;
+        top: 5%; left: 50%; transform: translateX(-50%);
+        padding: 20px;}
+.gallback img{width: 100%;
+         opacity: 70%;}
+
+
+.slide:hover h2{color:rgb(255, 133, 133, 80%) ; }
+.slide:hover h3{color:rgb(255, 133, 133, 80%) ;}
+.slide:hover p{ font-size: 1.1rem;}
+.slide:hover img{transform: scale(1.05);}
+
+
+
+
+
+
+
+
+
+#sec2bottom {width: 100%; height: 350px; 
+            display: flex; flex-wrap: wrap;
+            box-shadow: 10px 10px 3px rgb(0, 79, 255, 70%);
+            border: 2px solid  rgb(0, 79, 255, 70%);}
+
+
+#sec2bottom .sec2menu{width: 20%; height: 80%; transform: translateY(20px);
+                        border-right: 3px solid rgb(0, 79, 255, 70%);
+                        text-align: right;  }
+.sec2menu h2{font-size: 1.5rem; font-family: 'Pretendard-Regular';
+                color: #333333; 
+             transform: translate(-20px,40px);}
+.sec2menu h1{font-family: 'Pretendard-ExtraBold'; font-size: 2rem;
+                color: rgb(0, 79, 255, 100%);
+                transform: translate(-20px, 40px);}
+.sec2menu #sec2list{margin-top: 30px;
+                  transform: translate(-20px, 40px);}
+#sec2list .sec2sub{text-transform: uppercase; margin: 5px 0;
+                color: rgb(0, 79, 255, 50%);
+                   font-family: 'Pretendard-ExtraBold'; font-size: 1.5rem;
+                    transition: .5s;
+                        cursor: pointer; }
+
+
+
+
+#sec2bottom .sec2pick{width: 80%; height: 100%;                            
+                        display: flex;  align-items: center;} 
+.sec2pick .pickbox{width: 100%; height: 350px;
+                    position: relative; 
+                         overflow: hidden; }
+.pickslide{width: 100%; height: 300%;
+        position: absolute; top: 0; left: 0;
+        transition: .5s;}
+.pick1, .pick2, .pick3{width: 100%; height: calc(100% / 3);
+                                display: flex; flex-wrap: wrap;
+                                justify-content: center; align-items: center; }
+.sec2pick .pick{width: calc(100% / 3); height: 100%;}
+.pick img{ width: 55%; display: block; margin: auto;
+                margin-top: 15px; transition: .5s;
+                filter: drop-shadow(3px 3px 3px rgb(0, 79, 255, 50%));}
+.pick .caption{width: 100%; height: 50%; text-align: center;
+                margin-top: 40px; }
+.caption h2{ font-family: 'Pretendard-ExtraBold'; font-size: 1.5rem;
+            color: rgb(0, 39, 122, 80%);}
+.caption h3{ font-family: 'Pretendard-ExtraBold'; font-size: 1rem;
+            color: #333333;}
+.caption p{ font-family: 'Pretendard-Regular'; font-size: 1rem;
+            color: rgb(0, 79, 255, 50%);
+            margin-top: 10px;}
+
+
+
+
+
+
+#sec2list .sec2sub:hover{color: rgb(0, 79, 255, 100%); }
+.pick img:hover{transform: scale(1.1);
+                animation: pick 2s 0.5s infinite;}
+
+@keyframes pick {0% { transform:  scale(1.1) rotate(-2deg);}
+                33% {transform:  scale(1.1)  rotate(-5deg);}
+                66% {transform:  scale(1.1)  rotate(5deg);}
+                100% { transform:  scale(1.1) rotate(2deg);}}
+
+
+
+
+
+@media screen and (max-width:1100px) {
+        
+        .sec2gall button{height: 60px;}
+        .sec2menu h2{font-size: 1.1rem;}
+        .sec2menu h1{font-size: 1.6rem;}
+
+
+        
+}
+
+
+
+#brand{width: 100%; height: 60vh;
+        background: rgb(0, 79, 255, 20%);
+        opacity: 0;
+        transition: 1s;}
+.brandtext{width: 100%; height: 30%;
+        text-align: center; 
+        font-family: 'Pretendard-ExtraBold';        
+            display: flex; justify-content: center; align-items: center;}
+.brandtext h1{font-size: 3rem; color: rgb(0, 79, 255, 90%);}
+.brandtext h2{font-size: 1.2rem; color:#333333; margin-top: 5px;}
+.brandul{width: 90%; height: 70%;
+        display: flex; align-items: start;
+        margin: auto;}
+.brandlist{width: calc(100% / 3); height: 100%;}
+.brandlist h2{text-align: center;  color: rgb(0, 79, 255, 90%);
+        font-family: 'Pretendard-ExtraBold'; font-size: 2rem;
+        transition: .5s; }
+.brandlist img{width: 100%; 
+                transition: .5s;}
+
+
+
+@keyframes brand {from{opacity: 0;} to{opacity: 1; transform: translateY(-10px);}}
+
+.brandlist:hover img{ animation: brand 1.3s forwards;}
+.brandlist:hover h2{color: white; text-shadow: 0 2px  2px  rgb(0, 79, 255, 90%);}
+
+@media screen and (max-height:700px)  {
+        .brandlist h2{font-size: 1.3rem;}
+}
+
+@media screen and (max-width:900px)  {
+        .brandlist h2{font-size: 1.3rem;}
+}
+
+
+
+
+#sec3{width: 100%;  margin: auto; height: 110vh;
+            opacity: 0;
+        transition: 1s;
+         display: flex;
+        align-items: center;
+      
+       }
+
+#sec3event {width: 100%; height: 90%;
+            background: rgb(0, 79, 255, 40%);
+           }
+
+.sec3text{width: 100%; height: 15%;
+                    text-align: center; text-transform: uppercase; 
+                    font-family: 'Pretendard-ExtraBold';
+                    
+                        display: flex; justify-content: center; align-items: center;}
+
+.sec3text h1{font-size: 3rem; color: rgb(0, 79, 255, 90%);}
+.sec3text h2{font-size: 1.2rem; color: white;margin-top: 5px;}
+#sec3event .sec3promotion{width:60%; height: 80%; margin: auto;
+                            display: flex; flex-wrap: wrap;
+                                align-items: center;
+                               
+                        position: relative; }
+.sec3promotion > button{width: 5%; height: 10%; border: none;
+                        position: absolute; top: 50%; transform: translateY(-50%);
+                        background: transparent;
+                        font-size: 3rem; font-weight: 800;
+                        color: white;
+                        cursor: pointer;
+                        transition: .5s;}
+.promobu1{left: -10%;}
+.promobu2{right: -10%;}
+                
+.promo1, .promo2{display: flex; width: 100%; height: 100%;
+                position: absolute; top: 0; left: 0;}
+.sec3promotion .proleft{width: 66.3%; height: 100%; padding: 5px;}
+.sec3promotion .proright{width: 33.3%; height: 100%; }
+.proright > div{ width: 100%; height: 50%; }
+.pro2div{ padding: 5px 5px 2.5px 0;}
+.pro3div{ padding: 2.5px 5px 5px 0;}
+.sec3promotion .pro1{width: 100%;  height: 100%; display: block;                                       
+                    transition: .5s; }
+.sec3promotion .pro2{ width: 100%; height: 100%; display: block;                  
+                       transition: .5s;}
+.sec3promotion .pro3{width: 100%;; height: 100%; display: block;                         
+                    transition: .5s;}
+
+
+
+
+ #sec4{width: 100%; max-width: 1200px; height: 30vh;
+        margin: auto;}                   
+
+#sec3gitar{width: 100%; height: 100%; display: flex; flex-wrap: wrap;
+            justify-content: center; text-align: center;}
+#sec3gitar > div{width: 50%; height: 100%; text-transform: uppercase;               
+  }
+#sec3gitar h1{ font-family: 'Pretendard-ExtraBold'; font-size: 2rem;
+                color: rgb(0, 79, 255, 100%);
+                text-align: left;}
+#sec3gitar p{font-family: 'Pretendard-Regular'; font-size: 1.2rem;
+                color: rgb(0, 79, 255, 60%);
+                text-align: left;}
+.market img{margin-top: 20px;}
+
+#sec3gitar img{width: 80%; height: 60%; display: block;
+                transition: .5s;}
+
+
+
+.pro1:hover{box-shadow: 0 0 0 5px white;}
+.pro2:hover{box-shadow: 0 0 0 5px white;}
+.pro3:hover{box-shadow: 0 0 0 5px white;}
+.sec3promotion button:hover{color: rgb(0, 79, 255, 80%);}
+
+#sec3gitar img:hover{transform: translateY(-10px); filter: drop-shadow(0 2px 3px #333333);}
+
+
+
+
+@media screen and (max-width:1040px) {
+       
+        
+      #sec4 h1{font-size: 1.5rem;}
+      #sec4 p{font-size: 1rem;}
+
+        
+
+}
+
+
+
+
+
+
+
+
+
+
+#footer{width: 100%; height: 300px;
+        
+       background:#333333;
+        display: flex; flex-wrap: wrap;}
+#footinfo{width: 80%; height: 100%;
+            padding-left: 150px; padding-top: 50px; color: white;}
+#footinfo h1{font-family: 'Pretendard-Regular'; font-size: 0.9rem;
+                font-weight: 400;
+            margin-top: 10px; line-height: 1.5rem;}
+#footinfo a{ color: white; font-family: 'Pretendard-Regular';
+              text-decoration: underline; font-size: .8rem;}
+#footinfo p{font-family: 'Pretendard-Regular'; font-size: 0.8rem;}
+
+#iconbox{width: 20%; height: 100%;}
+.phone{width: 160px; height: 35px;
+                background: white; border-radius: 50px;
+                position: relative;
+                margin-top: 50px;
+                transition: .5s; }
+.phone a{color: rgb(0, 79, 255, 90%); width: 100%;
+        font-family: 'Pretendard-ExtraBold'; font-size: 1.3rem;
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        text-align: center;
+        transition: .5s;}
+.phone .icon{transition: .5s;}
+
+.iconbox{display: flex; flex-wrap: wrap;
+        width: 160px; justify-content:center;
+        margin-top: 10px;}
+.iconbox .icon{font-size: 1.3rem; padding: 10px; margin: 5px;
+                color: rgb(0, 79, 255, 90%);background:white;
+                    border-radius: 30px;
+                transition: .5s;}
+
+.iconbox .icon:hover{transform: translateY(-5px); 
+                        color:white; background:rgb(0, 79, 255, 90%)}
+.phone:hover{transform: translateY(-5px); background:rgb(0, 79, 255, 90%);}
+.phone:hover .icon{color: white;}
+.phone:hover a{color: white;}
+
+
+
+
+@media screen and (max-width:770px) {
+        #footinfo{padding-left: 50px; width: 70%; }
+        #iconbox{width: 30%;}
+        
+}
+
+
+@media screen and (max-width:500px) {
+                #footinfo{width: 60%;}
+                #iconbox{width: 40%;}
+                #footinfo h1{font-size: .7rem;}
+                #footinfo a{font-size: .7rem;}
+                #footinfo p{font-size: .7rem;}
+        
+}

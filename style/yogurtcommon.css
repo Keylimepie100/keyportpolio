@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+        font-family: 'Pretendard-ExtraBold';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+        font-weight: 800;
+        font-style: normal;
+    }
+
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HancomMalangMalang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kdg_Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/kdg_Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{box-sizing: border-box; margin: 0; outline: none;}
+ul{list-style: none; padding: 0;}
+a{text-decoration: none;}
+
+#header{width: 100%; height: 90px; position: fixed; z-index: 900;
+        background: white;
+        box-shadow: 0 2px 3px rgb(0, 79, 255, 100%)}
+#cash{width: 100%; height: 25px;
+        background: #004fff; text-align: center;
+        transition: .5s;}
+#cash p{color: white;
+        font-family: 'Pretendard-Regular';
+        font-size: .85rem; font-weight: 500;
+        line-height: 25px;}
+
+#cash:hover{background: rgb(0, 79, 255, 60%);}
+
+
+#navbox{width: 100%; max-width: 1200px; margin: auto; height:65px;
+        display: flex; flex-wrap: wrap; position: relative;}
+
+#hitext{position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+        color: #004fff; width: 300px; height: 65px;
+        
+        text-align: center; 
+        display: none;
+        }
+#hitext h1{transform: translateY(15px); font-family: 'Pretendard-ExtraBold';  font-size: 1.5rem;}
+
+#logo{width: 15%; height: 100%; position: relative;
+        }
+#logo img{width: 95%; display: block;
+           transform: translateY(25px); }
+#logo img:hover{ animation: logo 1s .2s forwards;}
+
+#logo .logo2{width: 80px; height: 80px; margin: auto;
+                background: rgb(0, 79, 255, 100%); border-radius: 50%;
+                text-align: center; text-transform: uppercase;
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+               display: none;}
+.logo2 h1{color: white;  font-size: 1rem; margin: auto; transform: translateY(20px);
+        font-family: 'HancomMalangMalang-Regular';    }
+
+@keyframes logo{from{transform: translateY(25px) scale(0.9);} 
+                    to{transform: translateY(25px) scale(1.1);}}
+
+
+#nav{width: 80%; height: 100%;}
+#menu{width: 100%; height: 100%;
+        display: flex; flex-wrap: wrap; justify-content: space-between}
+#menu .menua{ font-family: 'ONE-Mobile-Title'; font-size: 1.1rem;
+               color:rgb(0, 79, 255, 50%); line-height: 70px;
+               transition: .5s;}
+#menu .menulist{width: calc(100% / 6); height: 100%;
+                text-align: center;
+                background: white;
+                position: relative;
+              
+                }
+.menulist::after{content: ""; width: 0%; height: 5px;
+                background: rgb(0, 79, 255, 70%);
+                position: absolute; bottom: 15%; left: 0;
+                transition: .5s;}
+
+#sub{width: 100%;
+     position: absolute; top: 100%; left: 0;
+        display: none;}
+#sub .sublist{width: 100%; height: 65px;
+                text-align: center; line-height: 65px;
+                background: rgb(255, 255, 255, 70%);
+                transition: .5s;}
+.sublist a{color: #004fff;
+        font-family: 'Pretendard-Regular'; font-size: 1rem;
+        transition: .5s;}
+
+
+#menu .menulist:hover::after{width: 100%; color:rgb(0, 79, 255, 100%);}
+#menu .menulist:hover .menua{color:rgb(0, 79, 255, 90%);}
+
+#sub .sublist:hover{background: rgb(0, 79, 255, 50%);}
+#sub .sublist:hover a{color: white;}
+
+
+
+#navicon{width: 5%; height: 100%;
+        position: absolute; top: 0; right: 3%;
+      
+        display: none;}
+#navicon i{width: 100%; height: 100%;
+            display: block;
+            font-size: 25px;
+            color: rgb(0, 79, 255, 50%);}
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+        #header{height: 155px;}
+        #navbox{height: 130px;}
+        #logo{width: 20%;}
+        #nav{width: 75%;}
+        #menu .menulist{width: calc(100% / 3); height: 50%;}
+        #sub {z-index: 999;}
+       
+        #logo .logo{display: none;}
+        #logo .logo2{display: block;}
+       
+}
+
+@media screen and (max-width:500px) {
+        
+        #header{height: 90px;}
+
+        #navbox{height: 65px;  position: relative;}
+        #logo{width:  20%; }
+       
+        #logo .logo2{width: 50px; height: 50px;}
+        .logo2 h1{font-size: 0.7rem; transform: translateY(8px);}
+        #nav{width: 10%;}
+        #navbox{height: 65px;}
+        #menu{display: block; position: absolute; top: 100%; left: 100%;
+                
+                height: 390px;
+                 }
+        #menu .menulist {height: 65px}
+
+        #sub{ left: -100%; top: 0;}
+       
+
+        #navicon{display: block; width: 10%; height: 100%;
+                position: absolute;
+
+                         }
+        #navicon i{transform: translate(20px, 20px); transition: .5s;}
+
+        #hitext{display: block;}
+        #navicon:hover ~ #nav #menu{left :67%}
+        #menu:hover{left:67%}}
+        #navicon i:hover{color: rgb(0, 79, 255, 100%);}
